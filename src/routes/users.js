@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 const routeUsers = Router();
-import { deleteUser, postSignup, signout, postSignin, getUserBySession, getUserInfo } from '../controllers/users.js';
+import { deleteUser, postSignup, signout, postSignin, getUserBySession, getUserInfo, deleteUserByAdmin } from '../controllers/users.js';
 import { passportSignin, checkAuthentication, checkNoSession } from '../middleware/passportAuth.js';
 import checkAdminRole from '../middleware/adminPrivileges.js';
 
@@ -18,8 +18,8 @@ routeUsers.get('/profile', checkAuthentication, getUserBySession);
 
 routeUsers.delete('/profile', checkAuthentication, deleteUser);
 
-routeUsers.delete('/admin/profile', checkAuthentication, checkAdminRole, deleteUser);
+routeUsers.delete('/admin', checkAuthentication, checkAdminRole, deleteUserByAdmin);
 
-routeUsers.get('/admin/:id', checkAuthentication, checkAdminRole, getUserInfo);
+routeUsers.get('/admin', checkAuthentication, checkAdminRole, getUserInfo);
 
 export default routeUsers;

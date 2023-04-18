@@ -42,6 +42,19 @@ const deleteUser = async (req, res, next) => {
 	return res.status(200).json(result);
 };
 
+const deleteUserByAdmin = async (req, res, next) => {
+	const email = req.body.email;
+	const user = await getUserService(email);
+	const result = await deleteUserService(user.id);
+	if (result.deletedCound === 0) {
+		return res.status(404).send('nothing deleted');
+	}
+	if (result == 'error') {
+		return res.sendStatus(500);
+	}
+	return res.status(200).json(result);
+};
+
 const postSignup = async (req, res, next) => {
 	const user = req.body;
 	const password = user.password;
@@ -61,4 +74,4 @@ const postSignin = (req, res, next) => {
 	return res.sendStatus(200);
 };
 
-export { getUserInfo, getUserBySession, deleteUser, postSignup, postSignin, signout };
+export { getUserInfo, getUserBySession, deleteUser, postSignup, postSignin, signout, deleteUserByAdmin };
