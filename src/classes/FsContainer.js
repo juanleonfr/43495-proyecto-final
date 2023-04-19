@@ -1,5 +1,6 @@
 import { promises } from 'fs';
 import { logger } from '../utils/winstonLogger.js';
+import orderModel from '../models/orderModel.js';
 
 const errMessage = (err, func) => {
 	logger.error(`Date: ${Date.now()} \n Se ha producido un error al ejecutar ${func}\n ${err}`);

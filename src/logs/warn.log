@@ -52,3 +52,55 @@
   message: 'HTTP POST /api/productos',
   timestamp: '2023-04-19T00:06:11.017Z'
 }
+{
+  meta: {
+    req: {
+      url: '/user/profile',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.31.3',
+        accept: '*/*',
+        'postman-token': 'b7afb8b6-6efc-4a07-99ec-c87b8dbc5d43',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'session=eyJwYXNzcG9ydCI6e319; session.sig=3i1JGD4Uo8ju6uXkzH2tZqxKwD4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/user/profile',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 4
+  },
+  level: 'warn',
+  message: 'HTTP GET /user/profile',
+  timestamp: '2023-04-19T01:04:39.474Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/signin',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.31.3',
+        accept: '*/*',
+        'postman-token': 'ef2be1b0-af0f-499f-9704-d4ead2a40fb4',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '56',
+        cookie: 'session=eyJwYXNzcG9ydCI6e319; session.sig=3i1JGD4Uo8ju6uXkzH2tZqxKwD4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/signin',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 56
+  },
+  level: 'warn',
+  message: 'HTTP POST /user/signin',
+  timestamp: '2023-04-19T01:04:44.517Z'
+}

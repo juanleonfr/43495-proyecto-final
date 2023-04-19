@@ -3,5 +3,5 @@ import cors from 'cors';
 const dev = dotenv.config();
 const production = 'production';
 
-const conditionalExport = process.env.NODE_ENV == 'production' ? production : { dev, cors };
+const conditionalExport = process.argv[2] == 'dev' ? { dev, cors } : production;
 export default conditionalExport;

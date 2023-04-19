@@ -1,6 +1,7 @@
 import admin from 'firebase-admin';
 import { getFirestore } from 'firebase-admin/firestore';
 import { credentials } from '../utils/dotenvExports.js';
+import orderModel from '../models/orderModel.js';
 const serviceAccount = JSON.parse(credentials, import.meta.url);
 
 admin.initializeApp({
