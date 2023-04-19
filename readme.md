@@ -1,6 +1,6 @@
 # Proyecto Final de Desarrollo Backend - Coderhouse comisión 43495  
 
-# [![CSS](https://img.shields.io/badge/-Link%20al%20deploy%20en%20Railway-blue)](43495-proyecto-final-production.up.railway.app)
+Link al deploy en Railway: https://43495-proyecto-final-production.up.railway.app/
   
 ## Descripción
 
