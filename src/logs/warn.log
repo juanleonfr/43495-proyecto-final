@@ -104,3 +104,130 @@
   message: 'HTTP POST /user/signin',
   timestamp: '2023-04-19T01:04:44.517Z'
 }
+{
+  meta: {
+    req: {
+      url: '/api/carrito',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.32.2',
+        accept: '*/*',
+        'postman-token': '9facb819-4082-4ceb-82c4-45592c5a82dd',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/carrito',
+      query: {}
+    },
+    res: { statusCode: 401 },
+    responseTime: 1
+  },
+  level: 'warn',
+  message: 'HTTP GET /api/carrito',
+  timestamp: '2023-06-15T00:10:43.054Z'
+}
+{
+  meta: {
+    req: {
+      url: '/api/carrito',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.32.2',
+        accept: '*/*',
+        'postman-token': '360d7bd4-d28f-4ff2-8443-da3c70ca5b5d',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'session=eyJwYXNzcG9ydCI6eyJ1c2VyIjoiMTY4MTg2NjI4OTA5MiJ9fQ==; session.sig=bky9ruVLVkmxphbjNAau22bvuRY'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/carrito',
+      query: {}
+    },
+    res: { statusCode: 403 },
+    responseTime: 47
+  },
+  level: 'warn',
+  message: 'HTTP GET /api/carrito',
+  timestamp: '2023-06-15T00:10:56.239Z'
+}
+{
+  meta: {
+    req: {
+      url: '/api/carrito/productos',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.32.2',
+        accept: '*/*',
+        'postman-token': '98f9afa1-6264-4d4f-86da-885651103e4f',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'session=eyJwYXNzcG9ydCI6eyJ1c2VyIjoiMTY4MTg2NjI4OTA5MiJ9fQ==; session.sig=bky9ruVLVkmxphbjNAau22bvuRY'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/carrito/productos',
+      query: {}
+    },
+    res: { statusCode: 404 },
+    responseTime: 49
+  },
+  level: 'warn',
+  message: 'HTTP GET /api/carrito/productos',
+  timestamp: '2023-06-15T00:11:02.231Z'
+}
+{
+  meta: {
+    req: {
+      url: '/api/carrito/productos/2',
+      headers: {
+        'user-agent': 'PostmanRuntime/7.32.2',
+        accept: '*/*',
+        'postman-token': 'fbf9f0e5-9eb6-4df6-8bf9-28058ae4e2cd',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'session=eyJwYXNzcG9ydCI6eyJ1c2VyIjoiMTY4MTg0NTAyNDU4NCJ9fQ==; session.sig=QJTr-Sl59tQONUZUl6WdDmkcIng',
+        'content-length': '0'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/carrito/productos/2',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 96
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/carrito/productos/2',
+  timestamp: '2023-06-15T00:12:47.826Z'
+}
+{
+  meta: {
+    req: {
+      url: '/api/carrito',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.32.2',
+        accept: '*/*',
+        'postman-token': '6f3ac291-7a36-4fc2-a292-26720422bd38',
+        host: 'localhost:8080',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '2',
+        cookie: 'session=eyJwYXNzcG9ydCI6eyJ1c2VyIjoiMTY4MTg0NTAyNDU4NCJ9fQ==; session.sig=QJTr-Sl59tQONUZUl6WdDmkcIng'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/carrito',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 47
+  },
+  level: 'warn',
+  message: 'HTTP POST /api/carrito',
+  timestamp: '2023-06-15T00:13:01.054Z'
+}

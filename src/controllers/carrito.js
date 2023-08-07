@@ -59,7 +59,7 @@ const newCartItemById = async (req, res, next) => {
 	if (result == 'error') {
 		return res.sendStatus(500);
 	}
-	return res.status(20).json(result);
+	return res.status(200).json(result);
 };
 
 const deleteCartItemById = async (req, res, next) => {
