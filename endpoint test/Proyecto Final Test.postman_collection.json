@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "b0303fdf-065b-4174-94ee-e32148054d36",
+		"name": "Proyecto Final Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24238577",
+		"_collection_link": "https://gold-resonance-443356.postman.co/workspace/prueba~7215d184-d7fb-41f3-92aa-e23375ed3093/collection/24238577-b0303fdf-065b-4174-94ee-e32148054d36?action=share&creator=24238577&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "api/carrito",
+			"item": [
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito/",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito/productos",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/productos/:id_prod",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito/productos/:id_prod",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"productos",
+								":id_prod"
+							],
+							"variable": [
+								{
+									"key": "id_prod",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/productos/:id_prod",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito/productos/:id_prod",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"productos",
+								":id_prod"
+							],
+							"variable": [
+								{
+									"key": "id_prod",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/placeorder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"products\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/carrito/placeorder",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"placeorder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api/productos",
+			"item": [
+				{
+					"name": "/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/productos",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/productos/:id",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"productos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Jogger Nuevo\",\r\n    \"description\": \"Lorem ipsum dolor sit amet.\",\r\n    \"code\": \"123123123\",\r\n    \"thumbnail\": \"https://res.cloudinary.com/dxsntbs0t/image/upload/v1662667921/Entropy/productos/pantalones/jogger-dark-matter_uqmliu.jpg\",\r\n    \"price\": 6600,\r\n    \"stock\": 10,\r\n    \"category\": \"pants\",\r\n    \"color\": \"radiactivo xd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/productos",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Carbón para asado\",\r\n    \"price\": 1,\r\n    \"thumbnail\": \"https://www.sernac.cl/portal/619/articles-3420_imagen_01.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/productos/:id",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"productos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/api/productos/:id",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"productos",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "/profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/profile",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/profile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/profile",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ch@ion.com\",\r\n    \"password\": \"paso\",\r\n    \"fullname\": \"Champ Ion\",\r\n    \"age\": 99,\r\n    \"address\": \"lala lala argentina\",\r\n    \"avatarurl\": \"https://upload.wikimedia.org/wikipedia/commons/e/e1/Le_lenny_face.jpg\",\r\n    \"phone\": \"+numero de telefono aqui\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/signup",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ch@ion.com\",\r\n    \"password\": \"paso\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/signin",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/signin admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"password\": \"eladmineselmascapo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/signin",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/signout",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/signout",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user/admin",
+			"item": [
+				{
+					"name": "/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ch@ion.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/admin",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"ch@ion.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-project-43495.onrender.com/user/admin",
+							"protocol": "https",
+							"host": [
+								"backend-project-43495",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"user",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
